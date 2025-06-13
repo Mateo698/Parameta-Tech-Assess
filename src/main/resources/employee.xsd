@@ -1,0 +1,29 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://techassess.com/employeesoap"
+           xmlns:tns="http://techassess.com/employeesoap"
+           elementFormDefault="qualified">
+
+    <xs:element name="EmployeeRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="firstName" type="xs:string"/>
+                <xs:element name="lastName" type="xs:string"/>
+                <xs:element name="documentType" type="xs:string"/>
+                <xs:element name="documentNumber" type="xs:string"/>
+                <xs:element name="position" type="xs:string"/>
+                <xs:element name="salary" type="xs:double"/>
+                <xs:element name="birthDate" type="xs:string"/>
+                <xs:element name="vinculationDate" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="EmployeeResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="message" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
